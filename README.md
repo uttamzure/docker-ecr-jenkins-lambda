@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #  Automated Docker Image Deployment to Amazon ECR with Jenkins & Lambda Integration
 
 ![Docker](https://img.shields.io/badge/Docker-Containerization-blue)
@@ -338,7 +339,7 @@ ECR Repository
 ![](./IMG/ECR%20Repository.png)
 
 Lambda Logs
-![](./IMG/Lambda%20Logs.png
+![](./IMG/Lambda%20Logs.png)
 
 SNS Email Notification
 ![](./IMG/SNS%20Email%20Notification.jpeg)
@@ -388,3 +389,7 @@ The project includes:
 This project demonstrates how **Jenkins CI/CD pipelines can be integrated with AWS services to automate Docker image deployment and post-deployment automation using Lambda.**
 
 The solution provides a scalable, automated, and event-driven DevOps workflow.
+=======
+# docker-ecr-jenkins-lambda
+CI/CD pipeline project using Jenkins, Docker, AWS ECR and Lambda for automated deployment.
+>>>>>>> 2b02ed4a6f0eed75c5d4148b2e528054881b1d1c

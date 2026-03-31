@@ -20,11 +20,24 @@ def lambda_handler(event, context):
         }
     )
 
-    # Send SNS Notification
+    # Send SNS Notification (Updated Format)
     sns.publish(
         TopicArn='arn:aws:sns:us-east-1:042776340314:MyTopic',
-        Message=f'Docker Image {image_tag} pushed at {timestamp}',
-        Subject='ECR Push Notification'
+        Subject='Docker Deployment Notification',
+        Message=f'''
+Hello DevOps Team,
+
+A new Docker image has been successfully pushed to Amazon ECR.
+
+Repository Name : myapp-repo
+Image Tag       : {image_tag}
+Deployment Time : {timestamp}
+
+This deployment was automatically triggered by the Jenkins CI/CD pipeline.
+
+Best Regards,
+AWS Automation
+'''
     )
 
     return {
